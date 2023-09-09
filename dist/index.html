@@ -10,21 +10,26 @@
 
 <body class="font-primary bg-blue-600 w-auto min-h-screen flex flex-col justify-center items-center">
         <div class="flex flex-col gap-2">
-            <h1 class="text-5xl w-[494px] h-[72px]">
+            <h1 class="text-5xl w-[310px] sm:w-[494px] h-[72px]">
                 Leave a Note
             </h1>
-            <div class="flex flex-col gap-0 border rounded-lg">
-                <form class="m-0 p-0 h-[166px] border border-gray-300 rounded-lg">
-                    <textarea class="w-[494px] h-[166px] w-min-6" placeholder="Write text here...">Write text here...
-                    </textarea>
+            <div class="flex flex-col gap-0">
+                <form class="m-0 p-0 h-[166px]">
+                    <textarea class="pt-3 pl-4 w-[310px] sm:w-[494px] h-[166px] w-min-6 rounded-t-lg border border-gray-300" name="note" placeholder="Write text here..."></textarea>
                 </form>
-                <div class="bg-white border border-gray-300">
-                    <button>
-
-                    </button>
-                    <button>
-
-                    </button>
+                <div class="pl-3 bg-white border border-gray-300 rounded-b-lg h-[58px] flex justify-start items-center gap-3">
+                    <button type="button" class="m-0 w-[85px] h-[34px] text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        <svg class="w-3.5 h-3.5 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewbox="0 0 18 21">
+                          <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"></path>
+                        </svg>
+                        Save
+                      </button>
+                      <button type="button" class="m-0 w-[85px] h-[34px] text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        <svg class="w-3.5 h-3.5 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewbox="0 0 18 21">
+                          <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"></path>
+                        </svg>
+                        Load
+                      </button>
                 </div>
             </div>
     </div>
